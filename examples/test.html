@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test page</title>
+
+</head>
+<body>
+<p>
+	TODO make a nice looking pure client qrcode generator
+	even allow download of the image
+</p>
+
+<div id="output1"></div>
+<br/>
+<div id="output2"></div>
+
+<script src="../jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../jquery.qrcode.min.js"></script>
+<script>
+$(function(){
+	$('#output1').qrcode('fuck wu qing ming! sb wu qing min');
+});
+jQuery(function(){
+	jQuery('#output2').qrcode("http://jetienne.com");
+})
+</script>
+
+</body>
+</html>
